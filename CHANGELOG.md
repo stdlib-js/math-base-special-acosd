@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-25)
+## Unreleased (2025-04-29)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`c043489`](https://github.com/stdlib-js/stdlib/commit/c043489789108e25047c8ce5db0a8644aa7d4e8c) - **docs:** update related packages sections [(#6845)](https://github.com/stdlib-js/stdlib/pull/6845) _(by stdlib-bot)_
 -   [`55044b9`](https://github.com/stdlib-js/stdlib/commit/55044b91b4c63b5d600fb2cc04e810c50b3db422) - **docs:** add missing spaces _(by Philipp Burckhardt)_
 -   [`1065e83`](https://github.com/stdlib-js/stdlib/commit/1065e83f34259320e8bf014f28094a5240cb0374) - **test:** add tests for IEEE 754-2019 compliance [(#6599)](https://github.com/stdlib-js/stdlib/pull/6599) _(by Karan Anand)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
