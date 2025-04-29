@@ -35,14 +35,32 @@ limitations under the License.
 
 > Compute the [arccosine][arccosine] in degrees of a double-precision floating-point number.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-acosd
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@esm/index.mjs';
+var acosd = require( '@stdlib/math-base-special-acosd' );
 ```
 
 #### acosd( x )
@@ -50,7 +68,7 @@ import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd
 Computes the [arccosine][arccosine] (in degrees) of a double-precision floating-point number.
 
 ```javascript
-import sqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt@esm/index.mjs';
+var sqrt = require( '@stdlib/math-base-special-sqrt' );
 var v = acosd( 0.0 );
 // returns 90.0
 
@@ -84,25 +102,16 @@ var v = acosd( -3.14 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@esm/index.mjs';
+```javascript
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var acosd = require( '@stdlib/math-base-special-acosd' );
 
 var x = uniform( 100, -1.0, 1.0, {
     'dtype': 'float64'
 });
 
 logEachMap( 'acosd(%0.4f) = %0.4f', x, acosd );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -111,7 +120,91 @@ logEachMap( 'acosd(%0.4f) = %0.4f', x, acosd );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/acosd.h"
+```
+
+#### stdlib_base_acosd( x )
+
+Computes the [arccosine][arccosine] (in degrees) of a double-precision floating-point number.
+
+```c
+double out = stdlib_base_acosd( 0.0 );
+// returns 90.0
+
+out = stdlib_base_acosd( 0.5 );
+// returns ~60.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_acosd( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/acosd.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 1.0, 1.45, 1.89, 2.33, 2.78, 3.22, 3.66, 4.11, 4.55, 5.0 };
+
+    double v;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        v = stdlib_base_acosd( x[ i ] );
+        printf( "acosd(%lf) = %lf\n", x[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -124,7 +217,7 @@ logEachMap( 'acosd(%0.4f) = %0.4f', x, acosd );
 -   <span class="package-name">[`@stdlib/math-base/special/acos`][@stdlib/math/base/special/acos]</span><span class="delimiter">: </span><span class="description">compute the arccosine of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math-base/special/acosh`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math-base/special/asind`][@stdlib/math/base/special/asind]</span><span class="delimiter">: </span><span class="description">compute the arcsine (in degrees) of a double-precision floating-point number.</span>
--   <span class="package-name">[`@stdlib/math-base/special/atand`][@stdlib/math/base/special/atand]</span><span class="delimiter">: </span><span class="description">compute the arctangent (in degrees) of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/atand`][@stdlib/math/base/special/atand]</span><span class="delimiter">: </span><span class="description">compute the arctangent(in degrees) of a double-precision floating-point number.</span>
 
 </section>
 
@@ -139,7 +232,7 @@ logEachMap( 'acosd(%0.4f) = %0.4f', x, acosd );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -206,13 +299,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/acos]: https://github.com/stdlib-js/math-base-special-acos/tree/esm
+[@stdlib/math/base/special/acos]: https://github.com/stdlib-js/math-base-special-acos
 
-[@stdlib/math/base/special/acosh]: https://github.com/stdlib-js/math-base-special-acosh/tree/esm
+[@stdlib/math/base/special/acosh]: https://github.com/stdlib-js/math-base-special-acosh
 
-[@stdlib/math/base/special/asind]: https://github.com/stdlib-js/math-base-special-asind/tree/esm
+[@stdlib/math/base/special/asind]: https://github.com/stdlib-js/math-base-special-asind
 
-[@stdlib/math/base/special/atand]: https://github.com/stdlib-js/math-base-special-atand/tree/esm
+[@stdlib/math/base/special/atand]: https://github.com/stdlib-js/math-base-special-atand
 
 <!-- </related-links> -->
 
