@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-04)
+## Unreleased (2025-05-06)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`56388ac`](https://github.com/stdlib-js/stdlib/commit/56388aceeac1d76fd6f554c8871a55d908589415) - **chore:** add structured package data _(by Karan Anand)_
 -   [`76b5a2a`](https://github.com/stdlib-js/stdlib/commit/76b5a2a16fc50b903970a86bae38f99554537be4) - **chore:** add structured package data _(by Karan Anand)_
 -   [`c043489`](https://github.com/stdlib-js/stdlib/commit/c043489789108e25047c8ce5db0a8644aa7d4e8c) - **docs:** update related packages sections [(#6845)](https://github.com/stdlib-js/stdlib/pull/6845) _(by stdlib-bot)_
 -   [`55044b9`](https://github.com/stdlib-js/stdlib/commit/55044b91b4c63b5d600fb2cc04e810c50b3db422) - **docs:** add missing spaces _(by Philipp Burckhardt)_

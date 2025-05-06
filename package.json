@@ -94,7 +94,7 @@
       "alias": "acosd",
       "pkg_desc": "compute the arccosine (in degrees) of a double-precision floating-point number",
       "desc": "computes the arccosine (in degrees) of a double-precision floating-point number",
-      "short_desc": "arccosine (in degrees) of a double-precision floating-point number",
+      "short_desc": "arccosine",
       "parameters": [
         {
           "name": "x",
@@ -142,7 +142,7 @@
           ]
         }
       ],
-      "output_policy": "real_floating_point_and_generic",
+      "output_policy": "same",
       "returns": {
         "desc": "arccosine (in degrees)",
         "type": {
