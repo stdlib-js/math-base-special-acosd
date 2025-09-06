@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-11)
+## Unreleased (2025-09-06)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`2cf7f78`](https://github.com/stdlib-js/stdlib/commit/2cf7f78c164b51a905e7df83c99e0404ac55fe39) - **docs:** correct function names, return values, and method calls in TypeScript declaration examples _(by Philipp Burckhardt)_
 -   [`2a7a7b3`](https://github.com/stdlib-js/stdlib/commit/2a7a7b3e1d896959a83e2f0a43bba52b06078d86) - **docs:** update related packages sections [(#7616)](https://github.com/stdlib-js/stdlib/pull/7616) _(by stdlib-bot)_
 -   [`914f4fd`](https://github.com/stdlib-js/stdlib/commit/914f4fda357226b0b19278afb5de75f02773582d) - **docs:** update related packages sections [(#6995)](https://github.com/stdlib-js/stdlib/pull/6995) _(by stdlib-bot)_
 -   [`df5e6b8`](https://github.com/stdlib-js/stdlib/commit/df5e6b80f7fd70dd2d9f71b1ce3cae52ac52f11d) - **chore:** replace number strings with literals _(by Karan Anand)_
