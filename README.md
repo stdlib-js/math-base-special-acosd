@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@deno/mod.js';
+import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@v0.1.2-deno/mod.js';
 ```
 
 #### acosd( x )
@@ -87,7 +87,7 @@ var v = acosd( -3.14 );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@deno/mod.js';
+import acosd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-acosd@v0.1.2-deno/mod.js';
 
 var x = uniform( 100, -1.0, 1.0, {
     'dtype': 'float64'
