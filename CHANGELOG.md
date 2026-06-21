@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-29)
+## Unreleased (2026-06-21)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`9a4e514`](https://github.com/stdlib-js/stdlib/commit/9a4e5147a82a0b9db7105bc76fb0d616b7309fc8) - **style:** remove extra trailing newlines [(#13016)](https://github.com/stdlib-js/stdlib/pull/13016) _(by Philipp Burckhardt)_
 -   [`9229dd7`](https://github.com/stdlib-js/stdlib/commit/9229dd78fa82c5f863dbc51a9588314d53a97c44) - **bench:** refactor to use string interpolation in `math/base/special` [(#11386)](https://github.com/stdlib-js/stdlib/pull/11386) _(by Karan Anand)_
 -   [`6f1f614`](https://github.com/stdlib-js/stdlib/commit/6f1f614099fd5d3d7efccbe4ac64b0ee3cc7a084) - **test:** migrate `math/base/special/acosd` to ULP-based testing [(#11601)](https://github.com/stdlib-js/stdlib/pull/11601) _(by Prajjwal Bajpai)_
 
@@ -25,9 +26,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Karan Anand
+-   Philipp Burckhardt
 -   Prajjwal Bajpai
 
 </section>
